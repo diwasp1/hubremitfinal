@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hub Remit</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+			integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+			integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<div class="navbar" id="navbar">
+			<div class="top-navbar">
+				<div class="container">
+					<div class="top-navbar-wrapper">
+						<div class="first">
+							<span class="d-none  d-md-inline-block"><i class="fa fa-clock"></i> Sun-Friday 10:00 AM - 5:00 PM</span>
+							<span><i class="fa fa-map-marker-alt"></i> New Baneshwor, Kathmandu </span>
+						</div>
+						<div class="second">
+							<span class="d-none  d-md-inline-block"><i class="fa fa-envelope"></i> info@hubremit.com.np</span>
+							<span><i class="fa fa-phone"></i> 01-4322237</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="center-navbar">
+				<div class="container">
+					<div class="center-navbar-wrapper">
+						<div class="logo-container">
+							<img src="assets/images/logo.png" class="img-fluid" alt="">
+						</div>
+						<div class="new-form d-md-block d-none">
+							<div class="br-dropdown">
+								<div class="brBtn">नयाँ खाता खुलाउनुहोस्  <i class="fa fa-caret-down"></i></div>
+								<ul>
+									<a href="#">At a Glance</a>
+									<a href="#">Facilities</a>
+								</ul>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div class="bottom-navbar">
+				<div class="container">
+					
+					<div class="bottom-navbar-wrapper">
+						<div class="new-form d-inline-block d-md-none">
+							<div class="br-dropdown">
+								<div class="brBtn">नयाँ खाता खुलाउनुहोस्  <i class="fa fa-caret-down"></i></div>
+								<ul>
+									<a href="#">At a Glance</a>
+									<a href="#">Facilities</a>
+								</ul>
+							</div>
+						</div>
+						<div class="nav-links d-none d-lg-flex">
+							<a href="index.html" class="home"><i class="fa fa-home"></i></a>
+							<a href="about.html">हाम्रो बारेमा</a>
+							<a href="service.html">सेवाहरु</a>
+							<a href="report.html">प्रतिबेदनहरु </a>
+							<a href="notice.html">सूचना र सन्देशहरू</a>
+							<a href="gallery.html">ग्यालरी</a>
+							<a href="download.html">डाउनलोड्स</a>
+							<a href="career.html">अवसर</a>
+							<a href="contact.html">समपर्क</a>
+						</div>
+						<div class="open-nav d-block d-lg-none">
+							<i class="fa fa-bars" onclick="openNav()"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+            <a href="index.html">होमपेज</a>
+
+			<!-- <div class="br-dropdown">
+				<div class="brBtn">About <i class="fa fa-caret-down"></i></div>
+				<ul>
+					<a href="#">At a Glance</a>
+					<a href="#">Facilities</a>
+				</ul>
+			</div> -->
+
+			<a href="about.html">हाम्रो बारेमा</a>
+							<a href="service.html">सेवाहरु</a>
+							<a href="report.html">प्रतिबेदनहरु </a>
+							<a href="notice.html">सूचना र सन्देशहरू</a>
+							<a href="gallery.html">ग्यालरी</a>
+							<a href="download.html">डाउनलोड्स</a>
+							<a href="career.html">अवसर</a>
+							<a href="contact.html">समपर्क</a>
+		</div>
+		<div id="main">
+            <div class="service-banner">
+                <div class="hero">
+                  <div class="hero-item">
+                    <img src="assets/images/banner.jpg" class="img-fluid" alt="" />
+                    <div class="text-container">
+                      <div class="banner-title">
+                        हाम्रो सेवाहरु
+                      </div>
+                      <div class="subtitle">
+                        साना तथा मझौला बेवोसायाको लागि सरल कर्जा <br />
+                        सेवा, ८% ब्याज दर मासिक किस्ताबन्दीमा
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="service-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-6">
+                            <a href="single-service.html" class="service-item">
+                                <div class="img-container">
+                                    <img src="assets//images/hub1.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="title">
+                                    साना तथा मझौला बेवोसायाको लागि
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="single-service.html" class="service-item">
+                                <div class="img-container">
+                                    <img src="assets//images/hub2.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="title">
+                                    साना तथा मझौला बेवोसायाको लागि
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="single-service.html" class="service-item">
+                                <div class="img-container">
+                                    <img src="assets//images/hub3.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="title">
+                                    साना तथा मझौला बेवोसायाको लागि
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="single-service.html" class="service-item">
+                                <div class="img-container">
+                                    <img src="assets//images/hub1.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="title">
+                                    साना तथा मझौला बेवोसायाको लागि
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          
+             
+		
+			<div class="inquiry">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="title">
+								For Any Help Inquiry
+							</div>
+						</div>
+						<div class="col-md-4 col-6">
+							<i class="fa fa-envelope"></i> info@hubremit.com
+						</div>
+						<div class="col-md-4 col-6">
+							<i class="fa fa-phone"></i> 01-34783495
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<footer class="footer">
+				<div class="container">
+					<div class="logo-container">
+						<img src="assets/images/logo.png" class="img-fluid" alt="" />
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="title">About</div>
+							<div class="description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Accusamus delectus vitae, sunt delectus vitae, sunt
+								<br><br>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Accusamus delectus vitae, sunt consequuntur unde, officiis
+								deleniti dignissimos sequi aperiam
+							</div>
+							
+						</div>
+						<div class="col-md-4 col-6">
+							<div class="title">Quick Links</div>
+							<ul>
+								<li>
+									<a href="">About Us</a>
+								</li>
+								<li>
+									<a href="">Loan Section</a>
+								</li>
+								<li>
+									<a href="">Our Team</a>
+								</li>
+								
+								<li>
+									<a href="">Gallery</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-6">
+							
+							
+							<div class="title">Contact Us</div>
+							<ul class="contact-us">
+								<li>
+									<a href=""
+										><i class="fa fa-phone"></i> 01-74885949, 9841587582</a
+									>
+								</li>
+								<li>
+									<a href=""
+										><i class="fa fa-envelope"></i> info@hubremit.com</a
+									>
+								</li>
+								
+							</ul>
+
+							<div class="title">Follow Us</div>
+							<ul class="social-links">
+								
+								<li>
+									<a href=""><i class="fab fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<div class="container">
+						<div class="footer-links">
+							<a href="">Privacy Policy</a>
+							<a href="">Terms & Conditions</a>
+						</div>
+						<div class="copyright">
+							&copy; Copyright HubRemit 2020 All rights Reserved. Designed
+							By:
+							<a href="">An4soft</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+			integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+			crossorigin="anonymous"
+		></script>
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>
