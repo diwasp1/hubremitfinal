@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Mukta:wght@300;400;500;600;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Mukta", sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -22,7 +22,7 @@ body {
 .top-navbar .top-navbar-wrapper {
   font-size: 12px;
   width: 100%;
-  line-height: 30px;
+  line-height: 40px;
   color: #01a65a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +41,14 @@ body {
 .top-navbar .top-navbar-wrapper .first span i {
   font-size: 14px;
   margin-right: 5px;
+}
+
+.top-navbar .top-navbar-wrapper .second a {
+  background: yellow;
+  color: #01a65a;
+  display: inline-block;
+  padding: 0px 15px;
+  margin-left: 15px;
 }
 
 .top-navbar .top-navbar-wrapper .second span {
@@ -84,11 +92,13 @@ body {
 
 .new-form .br-dropdown .brBtn {
   cursor: pointer;
-  font-size: 12px;
+  font-size: 13px;
   border: 1px solid #01a65a;
   line-height: 30px;
   padding: 0px 15px;
   color: #01a65a;
+  letter-spacing: 1px;
+  font-weight: 600;
   margin-top: 25px;
   border-radius: 30px;
 }
@@ -139,12 +149,19 @@ body {
 .bottom-navbar .bottom-navbar-wrapper .nav-links a {
   line-height: 50px;
   color: white;
+  font-size: 15px;
   padding: 0px 15px;
   text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .bottom-navbar .bottom-navbar-wrapper .nav-links a:hover {
   background: #09844b;
+}
+
+.bottom-navbar .bottom-navbar-wrapper .nav-links a.active {
+  background: #11804c;
 }
 
 @media (max-width: 768px) {
@@ -357,7 +374,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #00000096;
+  background: #0000006b;
 }
 
 .banner .hero .hero-item .text-container {
@@ -381,15 +398,17 @@ body {
 }
 
 .banner .hero .hero-item .text-container .banner-title {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 900;
-  color: white;
+  color: #fff;
 }
 
 .banner .hero .hero-item .text-container .subtitle {
-  font-size: 18px;
-  color: white;
-  font-family: "Philosopher", sans-serif;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .banner .hero .hero-item .text-container .button-container {
@@ -421,12 +440,13 @@ body {
   }
   .banner .hero .hero-item .text-container .subtitle {
     font-size: 13px;
+    margin-top: 0px;
   }
 }
 
 .main-title {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 26px;
+  font-weight: 600;
   line-height: 40px;
   margin-bottom: 15px;
 }
@@ -435,17 +455,48 @@ body {
   background: #fff;
 }
 
+.notice-section .notice-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.notice-section .notice-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .notice-section .title {
   background: #01a65a;
   color: white;
   padding: 0px 15px;
   line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-align: center;
 }
 
 .notice-section a {
-  color: black;
+  color: #4e4e4e;
+  font-size: 15px;
   line-height: 50px;
+  font-weight: 500;
+  position: relative;
+}
+
+.notice-section a:before {
+  content: "";
+  position: absolute;
+  right: -35px;
+  top: 0;
+  height: 25px;
+  width: 1px;
+  background: #01a65a;
 }
 
 .notice-section a:hover {
@@ -454,8 +505,15 @@ body {
 
 @media (max-width: 768px) {
   .notice-section .title {
-    margin: 0px -15px;
     line-height: 45px;
+    margin: 0 -15px;
+  }
+  .notice-section a {
+    display: block;
+    text-align: center;
+  }
+  .notice-section a::before {
+    display: none;
   }
 }
 
@@ -473,7 +531,9 @@ body {
 }
 
 .about-section .text-container .description {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
 }
 
 .about-section .text-container .button-container {
@@ -485,18 +545,25 @@ body {
   color: #01a65a;
 }
 
+.about-section .main-title {
+  border-bottom: 1px solid #bab9b9;
+}
+
 .president-section {
   background: #f7f7f7;
 }
 
 .president-section .img-container {
-  margin-top: 60px;
   max-height: 350px;
   overflow: hidden;
 }
 
 .president-section .name {
   text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .president-section .text-container {
@@ -504,7 +571,9 @@ body {
 }
 
 .president-section .text-container .description {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
 }
 
 .president-section .text-container .button-container {
@@ -530,8 +599,9 @@ body {
 }
 
 .president-section .mobile-banner .mobile-banner-wrapper .title {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1px;
   color: white;
   text-align: center;
   width: 80%;
@@ -544,8 +614,9 @@ body {
 }
 
 .president-section .mobile-banner .mobile-banner-wrapper .button-container a {
-  padding: 10px 15px;
+  padding: 8px 25px;
   color: green;
+  font-size: 18px;
   background: yellow;
   border-radius: 30px;
 }
@@ -564,6 +635,7 @@ body {
 
 .loan-section .main-title {
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .loan-section .loan-item {
@@ -598,6 +670,7 @@ body {
 
 .saving-section .main-title {
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .saving-section .saving-item {
@@ -671,19 +744,26 @@ body {
 }
 
 .emi-section .slider-item .slider-top .price {
-  padding: 5px 15px;
+  padding: 5px 15px 5px 30px;
   background: #ffffff;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  color: #008848;
-  border: 1px solid #1baf5a;
+  margin-bottom: 15px;
+  font-size: 14px;
+  position: relative;
+  color: #494a4a;
+  border: 1px solid #bbbcbc;
+}
+
+.emi-section .slider-item .slider-top .price::before {
+  content: "Rs.";
+  position: absolute;
+  left: 10px;
 }
 
 .emi-section .slider {
   margin-bottom: 45px;
   -webkit-appearance: none;
   width: 100%;
-  height: 15px;
+  height: 8px;
   border-radius: 5px;
   background: #d3d3d3;
   outline: none;
@@ -696,16 +776,16 @@ body {
 .emi-section .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: #008848;
   cursor: pointer;
 }
 
 .emi-section .slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: #008848;
   cursor: pointer;
@@ -735,6 +815,8 @@ body {
 
 .emi-section .emi-wrapper .emi-nav h5 {
   color: #008848;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .emi-section .emi-wrapper .emi-nav .emi-amount {
@@ -773,7 +855,76 @@ body {
   font-size: 18px;
 }
 
+.emi-section .top-bar {
+  position: relative;
+  background: #1baf5a;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.emi-section .top-bar .emi-box {
+  position: absolute;
+  top: 24px;
+  text-align: center;
+  width: 350px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: inline-block;
+  left: calc(50% - 175px);
+  font-size: 26px;
+  line-height: 50px;
+  font-weight: 600;
+  -webkit-box-shadow: 0px -2px 4px #7b7b7b;
+          box-shadow: 0px -2px 4px #7b7b7b;
+  background: yellow;
+  color: #128543;
+}
+
+.emi-section .circles {
+  margin-bottom: -10px;
+}
+
+.emi-section .circle {
+  width: 100px;
+  margin: 6px 6px 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.emi-section .circle canvas {
+  vertical-align: top;
+}
+
+.emi-section .circle strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.emi-section .circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.emi-section .circle span {
+  display: block;
+  color: #aaa;
+  margin-top: 12px;
+}
+
 @media (max-width: 768px) {
+  .emi-section .top-bar .emi-box {
+    width: 220px;
+    left: calc(50% - 110px);
+    font-size: 18px;
+  }
   .emi-section .emi-wrapper {
     margin: 0px;
     margin-bottom: 30px;
@@ -786,6 +937,10 @@ body {
 
 .association .main-title {
   text-align: center;
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  margin-bottom: 30px;
 }
 
 .association .association-slider .slick-slide img {
@@ -813,32 +968,37 @@ body {
 }
 
 .testimonial .main-title {
-  text-align: center;
   margin-bottom: 30px;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: bolder;
 }
 
 .testimonial .testimonial-slider .item {
   padding: 15px 0px;
-  margin: 10px;
+  margin: 20px;
   background: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 2px 4px 0px 2px 4px #c1bebe;
-          box-shadow: 0px 2px 4px 0px 2px 4px #c1bebe;
+  -webkit-box-shadow: 0px 5px 15px 0px #c1bebe;
+          box-shadow: 0px 5px 15px 0px #c1bebe;
 }
 
 .testimonial .testimonial-slider .item .name {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 26px;
+  font-weight: 900;
   padding: 0px 30px;
 }
 
 .testimonial .testimonial-slider .item .location {
-  font-size: 14px;
+  font-size: 16px;
   padding: 0px 30px;
+  font-weight: 500;
 }
 
 .testimonial .testimonial-slider .item .description {
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 500;
   padding: 0px 30px;
 }
 
@@ -855,19 +1015,22 @@ body {
 
 .inquiry {
   background: #01a65a;
-  padding: 45px 0px;
+  padding: 30px 0px;
   font-size: 18px;
   color: white;
 }
 
 .inquiry .title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .inquiry i {
   font-size: 24px;
   margin-right: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 @media (max-width: 768px) {
@@ -885,17 +1048,37 @@ body {
 }
 
 .footer {
-  padding-top: 30px;
-  background: #eae9e9;
+  padding-top: 60px;
+  background: #fefefe;
   font-size: 14px;
 }
 
+.footer #important {
+  padding-top: 30px;
+}
+
+.footer #important li {
+  border-bottom: 1px solid #949494;
+  padding-bottom: 6px;
+}
+
 .footer .logo-container {
-  height: 70px;
+  height: auto;
 }
 
 .footer .logo-container img {
-  height: inherit;
+  height: 80px;
+}
+
+.footer .logo-container p {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.footer .logo-under-title {
+  font-size: 30px;
+  font-weight: 900;
+  padding-top: 15px;
 }
 
 .footer ul {
@@ -926,6 +1109,15 @@ body {
   margin: 15px;
 }
 
+.footer .contact-us {
+  padding-top: 30px;
+}
+
+.footer .contact-us p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .footer .contact-us i {
   font-size: 14px;
 }
@@ -945,7 +1137,6 @@ body {
 }
 
 .footer .title {
-  margin-top: 15px;
   font-size: 18px;
   font-weight: bold;
   font-family: "Philosopher", sans-serif;
@@ -985,6 +1176,12 @@ body {
     display: block;
     font-size: 12px;
   }
+  .footer .description {
+    margin-bottom: 15px;
+  }
+  .footer #important, .footer .contact-us {
+    padding-top: 10px;
+  }
 }
 
 .page-banner {
@@ -1008,17 +1205,15 @@ body {
 
 .page-banner .banner-title {
   font-size: 50px;
-  color: white;
+  color: #01a65a;
   margin-top: 90px;
   text-align: center;
-  font-family: "Philosopher", sans-serif;
   z-index: 1;
 }
 
 .page-banner .subtitle {
   font-size: 20px;
-  color: white;
-  font-family: "Philosopher", sans-serif;
+  color: #01a65a;
   z-index: 1;
 }
 
@@ -1153,7 +1348,7 @@ body {
 }
 
 .about-us-section .about-us-description {
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -1175,7 +1370,7 @@ body {
   text-align: center;
   background: white;
   padding: 40px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .our-moto .our-moto-content img {
@@ -1183,7 +1378,7 @@ body {
 }
 
 .our-moto .our-moto-content p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 900;
 }
 
@@ -1469,11 +1664,10 @@ body {
 }
 
 .about-banner .hero .hero-item .text-container .banner-title {
-  font-size: 40px;
+  font-size: 42px;
+  letter-spacing: 1px;
   font-weight: 900;
-  color: white;
-  line-height: 45px;
-  font-family: "Philosopher", sans-serif;
+  color: #fff;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -1481,7 +1675,6 @@ body {
 .about-banner .hero .hero-item .text-container .subtitle {
   font-size: 18px;
   color: white;
-  font-family: "Philosopher", sans-serif;
   text-align: center;
 }
 
@@ -1936,7 +2129,7 @@ body {
 }
 
 .service-page {
-  padding: 30px 0px;
+  padding: 15px 0px;
 }
 
 .service-page .mobile-banner {
@@ -1987,12 +2180,13 @@ body {
 }
 
 .service-page .service-item .img-container {
-  height: 300px;
+  height: 250px;
   overflow: hidden;
 }
 
 .service-page .service-item .img-container img {
   height: inherit;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
