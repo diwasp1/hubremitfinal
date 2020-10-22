@@ -319,6 +319,7 @@ body {
 			height: inherit;
 			img {
 				width: 100%;
+				height: 90vh;
 				object-fit: cover;
 				object-position: center;
 			}
@@ -1934,6 +1935,175 @@ body {
 	.single-servicce-page {
 		.description {
 			margin-top: 30px;
+		}
+	}
+}
+
+.open-form{
+	.form-header {
+		display: flex;
+		justify-content: space-between;
+		padding: 15px;
+		font-family: "Poppins", sans-serif;
+		.logo-container {
+			width: 200px;
+			text-align: center;
+			
+			img {
+				margin-top: 30px;
+				width: 80%;
+			}
+		
+		}
+		.header-items {
+			text-align: center;
+			.nepali-item {
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 26px;
+				font-family: "Mukta", sans-serif;
+			}
+			.university {
+				font-size: 36px;
+				font-weight: bold;
+				margin-top: 30px;
+				color: #01a65a;
+			}
+			.faculty {
+				font-size: 16px;
+			}
+			.application {
+				font-size: 24px;
+				font-weight: bold;
+			}
+			.subjects {
+				margin-top: 5px;
+				font-size: 14px;
+			}
+		}
+	}
+		.photo-upload {
+			text-align: center;
+			position: relative;
+			input {
+				width: 110px;
+			}
+			.photo-text {
+				padding: 0px 15px;
+				padding-top: 40%;
+				font-weight: lighter;
+				font-size: 14px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				left: 0;
+			}
+		}
+		.photo-wrapper {
+			height: 150px;
+			width: 150px;
+			margin: 0 auto;
+			background: #e0e0e0;
+			box-shadow: 0px 2px 5px -3px grey;
+			margin-bottom: 10px;
+			border-radius: 5px;
+		}
+		#upload_with_preview {
+			height: 100%;
+			padding: 15px;
+		}
+	
+	.form-content {
+		.main-title {
+			font-size: 26px;
+			margin-top: 30px;
+			margin-bottom: 15px;
+			position: relative;
+			text-align: center;
+			&::after {
+				position: absolute;
+				content: "";
+				border-bottom: 1px solid gray;
+				left: 65%;
+				right: 0;
+				top: 20px;
+			}
+			&::before {
+				position: absolute;
+				content: "";
+				border-bottom: 1px solid gray;
+				right: 65%;
+				left: 0;
+				top: 20px;
+			}
+		}
+		.sub-title {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		.main-title-second {
+			font-size: 26px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-weight: bold;
+			position: relative;
+			text-align: center;
+		}
+		.form-flex {
+			display: flex;
+			justify-content: space-between;
+			.form-group {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				padding-right: 15px;
+			}
+			.checkbox-wrap{
+				display: flex;
+				justify-content: flex-start;
+				padding-right: 15px;
+				input[type=checkbox]{
+					width: 50px;
+					display: inline-block;
+					margin-top: 5px;
+				}
+				label{
+					flex: 1;
+				};
+				input[type=text]{
+					margin-left: 15px;
+				}
+			}
+		}
+		.form-flex1 {
+			padding: 30px;
+			margin-bottom: 30px;
+			box-shadow: 0px 0px 5px #d0cdcd;
+			border-radius: 5px;
+		}
+		.photo-banner {
+			.img-container {
+				height: 200px;
+				width: 200px;
+				background: #e0e0e0;
+				padding: 15px;
+			}
+		}
+	}
+	.register-button {
+		text-align: center;
+		button {
+			margin-bottom: 60px;
+			margin-top: 30px;
+		}
+		.btn-color {
+			background: #7e2b24;
+			color: white;
+			&:hover {
+				background: brown;
+			}
 		}
 	}
 }
